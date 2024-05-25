@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>planet selling</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@400;500;600&family=Montserrat+Subrayada:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@200;500;600&family=Work+Sans:ital@1&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /*  font-weight: bold;*/
+        color: white;
+      }
+      body {
+        font-family: "Montserrat Subrayada", sans-serif;
+        background-color: #2c2c2c;
+      }
+      header {
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid black;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+      }
+      ul li a {
+        margin: 0 5px;
+        text-decoration: none;
+        border: 2px solid white;
+        padding: 0px 10px;
+        border-radius: 50px;
+      }
+      .logo {
+        border: 2px solid white;
+        padding: 15px 5px;
+        border-radius: 50%;
+      }
+      .signup {
+        background-color: white;
+        color: black;
+      }
+      .signup:hover {
+        background-color: black;
+        color: whitesmoke;
+        border-color: rgba(0, 0, 0, 0.373);
+      }
+      main {
+        display: flex;
+        height: 90vh;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0px 150px;
+        flex-wrap: wrap;
+      }
+      main h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .contentleft {
+        flex: 1;
+      }
+      .contentmid {
+        flex: 2;
+      }
+      .contentright {
+        flex: 1;
+      }
+      .imagepic {
+        max-width: 400px;
+        height: auto;
+        -webkit-animation: spin 40s linear infinite;
+        -moz-animation: spin 40s linear infinite;
+        animation: spin 40s linear infinite;
+        box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+        border-radius: 50%;
+      }
+      @-moz-keyframes spin {
+        100% {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      .btn {
+        padding: 15px 30px;
+        background: white;
+        outline: none;
+        border: none;
+        color: black;
+        font-weight: 700;
+        border-radius: 50px;
+        margin-top: 15px;
+      }
+      .btn:hover {
+        background: #2c2c2c;
+        border: 2px solid black;
+        color: white;
+      }
+      p {
+        line-height: 22px;
+        font-weight: 300;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Logo</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Offer</a></li>
+          <li><a href="#">Buy now</a></li>
+          <li><a href="#">Sell now</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#" class="signup">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contentleft">
+        <h2>Mercury</h2>
+      </div>
+      <div class="contentmid">
+        <p>
+          Mercury is a naturally-occurring chemical element found in rock in the
+          earth's crust, including in deposits of coal. On the periodic table,
+          it has the symbol "Hg" and its atomic number is 80. It exists in
+          several forms: Elemental (metallic) mercury. lemental or metallic
+          mercury is a shiny, silver-white metal, historically referred to as
+          quicksilver, and is liquid at room temperature. It is used in older
+          thermometers, fluorescent light bulbs and some electrical switches.
+          When dropped, elemental mercury breaks into smaller droplets which can
+          go through small cracks or become strongly attached to certain
+          materials
+        </p>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="contentright">
+        <img src="about.png" alt="image" class="imagepic" />
+      </div>
+    </main>
+  </body>
+</html>
